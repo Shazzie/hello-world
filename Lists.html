@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lists Quiz</title>
+</head>
+<body>
+  <p>Create an unordered list! Make a list of the three web languages: HTML, CSS and JavaScript.</p>
+  <ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+  </ul>
+  <p>Create an ordered list! Make a list of the three web languages: HTML, CSS and JavaScript.</p>
+  <ol>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+  </ol>
+  <p>A nested list is simply a list that occurs as an element of another list (which may of course itself be an element of another list, etc.).</p>
+  <ul>
+    <li>first item</li>
+    <li>second item     
+    <!-- Look, the closing </li> tag is not placed here! -->
+      <ul>
+        <li>second item first subitem</li>
+        <li>second item second subitem
+        <!-- Same for the second nested unordered list! -->
+          <ul>
+            <li>second item second subitem first sub-subitem</li>
+            <li>second item second subitem second sub-subitem</li>
+            <li>second item second subitem third sub-subitem</li>
+          </ul>
+        </li> <!-- Closing </li> tag for the li that
+                    contains the third unordered list -->
+        <li>second item third subitem</li>
+      </ul>
+    <!-- Here is the closing </li> tag -->
+    </li>
+    <li>third item</li>
+  </ul>
+  <p>A nested list both ordered and unordered</p>
+  <ul>
+    <li>first item</li>
+    <li>second item
+    <!-- Look, the closing </li> tag is not placed here! -->
+      <ol>
+        <li>second item first subitem</li>
+        <li>second item second subitem</li>
+        <li>second item third subitem</li>
+      </ol>
+    <!-- Here is the closing </li> tag -->
+    </li>
+    <li>third item</li>
+  </ul>
+</body>
+</html>
