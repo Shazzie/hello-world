@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+Meta information entered here 
+</head>
+<body>
+Content goes here!
+</body>
+</html>
+
+<!--
+This template can be broken down into 3 parts:
+
+DOCTYPE: Describes the type of HTML. There are different types but for the most part you're good with <!DOCTYPE html>.
+<head>: Describes meta information about the site, such as the title, holds the scripts, styles and other things which are machine parsable.
+<body>: This is the part the user actually gets to see The content!.
+-->
