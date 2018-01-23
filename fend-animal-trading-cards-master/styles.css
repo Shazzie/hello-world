@@ -1,0 +1,49 @@
+.card {
+    width: 440px;
+    box-shadow: 0px 5px 15px 0px rgba(202, 108, 10, 0.5);
+    border-radius: 4px;
+    padding-bottom: 10px;
+  }
+  h3 {
+    font-family: 'Roberto', 'Tangerine' serif;
+    font-size: 30px;
+    text-shadow: 4px 4px 4px rgb(223, 69, 9);
+    padding: 15px 0px 15px 15px;
+  
+    margin: 0;
+  }
+  .displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    border: 2px solid rgb(214, 117, 6);
+    margin-bottom: 10px;
+  }
+  
+  .italics {
+    font-style: italic;
+    font-family: 'Roberto', 'Tangerine' serif;
+    font-size: 20px;
+  }
+  
+  .text-box {
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    text-align: left;
+    background: rgb(231, 193, 20);
+    border: 2px solid rgb(214, 117, 6);
+  }
+  
+  .fact {
+    font-weight: bold;
+  }
+  
+  ul {
+    list-style: none;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+  }
