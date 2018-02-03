@@ -13,7 +13,7 @@ console.log(laugh());
  * Programming Quiz: Laugh (5-4)
  */
 
-var laugh1 = function(num) {
+var laugh = function(num) {
   var string = "";
   for (var i = 0; i < num; i++) {
     string = string += "ha";
@@ -21,7 +21,7 @@ var laugh1 = function(num) {
   return string + "!";
 };
 
-console.log(laugh1(3));
+console.log(laugh(3));
 
 /*
  * Programming Quiz: Cry (5-5)
