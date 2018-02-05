@@ -1,0 +1,442 @@
+An array is useful because it stores multiple values into a single, organized data structure. You can define a new array by listing values separated with commas between square brackets [].
+
+// creates a `donuts` array with three strings
+var donuts = ["glazed", "powdered", "jelly"];
+
+
+But strings aren’t the only type of data you can store in an array. You can also store numbers, booleans… and really anything!
+
+// creates a `mixedData` array with mixed data types
+var mixedData = ["abcd", 1, true, undefined, null, "all the things"];
+
+You can even store an array in an array to create a nested array!
+
+// creates a `arraysInArrays` array with three arrays
+var arraysInArrays = [[1, 2, 3], ["Julia", "James"], [true, false, true, false]];
+
+Nested arrays can be particularly hard to read, so it's common to write them on one line, using a newline after each comma:
+
+var arraysInArrays = [
+  [1, 2, 3], 
+  ["Julia", "James"], 
+  [true, false, true, false]
+];
+
+
+/*
+ * Programming Quiz: UdaciFamily (6-1)
+ */
+
+
+var udaciFamily = [ "Julia", "James","Shazzie" ];
+
+console.log(udaciFamily);
+
+/*
+ * Programming Quiz: Building the Crew (6-2)
+ */
+
+
+
+var captain = "Mal";
+
+var second = "Zoe";
+
+var pilot = "Wash";
+
+var companion = "Inara";
+
+var mercenary = "Jayne";
+
+var mechanic = "Kaylee";
+
+var crew= [captain, second, pilot, companion, mercenary, mechanic];
+
+
+
+console.log(crew);
+
+/*
+ * Programming Quiz: The Price is Right (6-3)
+ *
+/
+
+var prices = [1.23, 48.11, 90.11, 8.50, 9.99, 1.00, 1.10, 67.00];
+
+
+prices[1]=9;
+
+prices[3]=10;
+
+prices[7]=99;
+
+
+console.log(prices);
+
+
+
+Array.length
+
+var donuts = ["glazed", "powdered", "sprinkled"];
+console.log(donuts.length);
+
+
+To access the length property, type the name of the array, followed by a period . (you’ll also use the period to access other properties and methods), and the word length. The length property will then return the number of elements in the array.
+
+TIP: Strings have a length property too! You can use it to get the length of any string. For example, "supercalifragilisticexpialidocious".length returns 34.
+
+
+You can represent the spread of donuts using an array.
+
+var donuts = ["glazed", "chocolate frosted", "Boston creme", "glazed cruller", "cinnamon sugar", "sprinkled"];
+Then, you can push donuts onto the end of the array using the push() method.
+
+donuts.push("powdered"); // pushes "powdered" onto the end of the `donuts` array
+Returns: 7
+donuts array: ["glazed", "chocolate frosted", "Boston creme", "glazed cruller", "cinnamon sugar", "sprinkled", "powdered"]
+
+
+Notice, with the push() method you need to pass the value of the element you want to add to the end of the array. Also, the push() method returns the length of the array after an element has been added.
+
+var donuts = ["glazed", "chocolate frosted", "Boston creme", "glazed cruller", "cinnamon sugar", "sprinkled"];
+donuts.push("powdered"); // the `push()` method returns 7 because the `donuts` array now has 7 elements
+
+
+Pop
+Alternatively, you can use the pop() method to remove elements from the end of an array.
+
+var donuts = ["glazed", "chocolate frosted", "Boston creme", "glazed cruller", "cinnamon sugar", "sprinkled", "powdered"];
+
+donuts.pop(); // pops "powdered" off the end of the `donuts` array
+donuts.pop(); // pops "sprinkled" off the end of the `donuts` array
+donuts.pop(); // pops "cinnamon sugar" off the end of the `donuts` array
+Returns: "cinnamon sugar"
+donuts array: ["glazed", "chocolate frosted", "Boston creme", "glazed cruller"]
+
+With the pop() method you don’t need to pass a value; instead, pop() will always remove the last element from the end of the array. Also, pop() returns the element that has been removed in case you need to use it.
+
+var donuts = ["glazed", "chocolate frosted", "Boston creme", "glazed cruller", "cinnamon sugar", "sprinkled", "powdered"];
+donuts.pop(); // the `pop()` method returns "powdered" because "powdered" was the last element on the end of `donuts` array
+Returns: "powdered"
+
+
+var donuts = ["glazed", "strawberry frosted", "powdered", "Boston creme"];
+
+donuts.pop();
+donuts.pop();
+donuts.pop();
+donuts.push("maple walnut");
+donuts.pop();
+donuts.push("sprinkled");
+
+console.log(donuts)
+
+
+Splice
+splice() is another handy method that allows you to add and remove elements from anywhere within an array.
+
+While push() and pop() limit you to adding and removing elements from the end of an array, splice() lets you specify the index location to add new elements, as well as the number of elements you'd like to delete (if any).
+
+var donuts = ["glazed", "chocolate frosted", "Boston creme", "glazed cruller"];
+donuts.splice(1, 1, "chocolate cruller", "creme de leche"); // removes "chocolate frosted" at index 1 and adds "chocolate cruller" and "creme de leche" starting at index 1
+
+
+var months = ['Jan', 'March', 'April', 'June'];
+
+months.splice(1, 0, 'Feb');
+
+// inserts at 1st index position
+console.log(months);
+
+// expected output: Array ['Jan', 'Feb', 'March', 'April', 'June']
+
+months.splice(4, 1, 'May');
+
+// replaces 1 element at 4th index
+console.log(months);
+// expected output: Array ['Jan', 'Feb', 'March', 'April', 'May']
+
+
+
+/*
+ * Programming Quiz: Colors of the Rainbow (6-4)
+ */
+
+
+var rainbow = ["Red", "Orange", "Blackberry", "Blue"];
+
+
+rainbow.splice(-2,1,"Yellow","Green");
+
+rainbow.push("Purple");
+
+console.log(rainbow)
+
+
+
+function hasEnoughPlayers(array) {
+
+  if (array.length >= 7) {
+
+    return true;
+ 
+  }else {
+
+    return false;
+ 
+  }
+
+}
+
+
+var team = ["Oliver Wood", "Angelina Johnson", "Katie Bell", "Alicia Spinnet", "George Weasley", "Fred Weasley", "Harry Potter"];
+console.log(hasEnoughPlayers(team));
+
+
+/*
+ * Programming Quiz: Joining the Crew (6-6)
+ *
+/
+
+var captain = "Mal";
+
+var second = "Zoe";
+
+var pilot = "Wash";
+
+var companion = "Inara";
+
+var mercenary = "Jayne";
+
+var mechanic = "Kaylee";
+
+
+var crew = [captain, second, pilot, companion, mercenary, mechanic];
+
+
+var doctor = "Simon";
+
+var sister = "River";
+
+var shepherd = "Book";
+
+
+crew.push(doctor,sister,shepherd)
+
+
+console.log(crew)
+
+var.reverseMe.reverse()
+
+sortMe.sort();
+
+
+Array Loops
+
+var donuts = ["jelly donut", "chocolate donut", "glazed donut"];
+
+we decided to make all the same donut types, but only sell them as donut holes instead, we could write the following code:
+
+donuts[0] += " hole";
+donuts[1] += " hole";
+donuts[2] += " hole";
+
+donuts array: ["jelly donut hole", "chocolate donut hole", "glazed donut hole"]
+
+Loop it..
+
+var donuts = ["jelly donut", "chocolate donut", "glazed donut"];
+
+// the variable `i` is used to step through each element in the array
+for (var i = 0; i < donuts.length; i++) {
+    donuts[i] += " hole";
+    donuts[i] = donuts[i].toUpperCase();
+
+donuts array: ["JELLY DONUT HOLE", "CHOCOLATE DONUT HOLE", "GLAZED DONUT HOLE"]
+
+
+var donuts = ["jelly donut", "chocolate donut", "glazed donut"];
+
+donuts.forEach(function(donut) {
+  donut += " hole";
+  donut = donut.toUpperCase();
+  console.log(donut);
+});
+
+words = ["cat", "in", "hat"];
+words.forEach(function(word, num, all) {
+  console.log("Word " + num + " in " + all.toString() + " is " + word);
+});
+
+
+/*
+ * Programming Quiz: Another Type of Loop (6-8)
+ *
+ * Use the existing `test` variable and write a `forEach` loop
+ * that adds 100 to each number that is divisible by 3.
+ *
+ * Things to note:
+ *  - you must use an `if` statement to verify code is divisible by 3
+ *  - you can use `console.log` to verify the `test` variable when you're finished looping
+ */
+
+
+
+var test = [12, 929, 11, 3, 199, 1000, 7, 1, 24, 37, 4,
+    19, 300, 3775, 299, 36, 209, 148, 169, 299,
+    6, 109, 20, 58, 139, 59, 3, 1, 139
+];
+
+
+test.forEach(function(num, index, array)
+{
+  
+if(num % 3 === 0){
+
+    array[index] = num += 100;
+ 
+  }
+
+});
+
+
+console.log(test);
+
+Map
+
+var donuts = ["jelly donut", "chocolate donut", "glazed donut"];
+
+var improvedDonuts = donuts.map(function(donut) {
+  donut += " hole";
+  donut = donut.toUpperCase();
+  return donut;
+});
+
+
+/*
+ * Programming Quiz: I Got Bills (6-9)
+ *
+ * Use the .map() method to take the bills array below and create a second array
+ * of numbers called totals. The totals array should contains each amount from the
+ * bills array but with a 15% tip added. Log the totals array to the console.
+ *
+ * For example, the first two entries in the totals array would be:
+ *
+ * [57.76, 21.99, ... ]
+ *
+ * Things to note:
+ *  - each entry in the totals array must be a number
+ *  - each number must have an accuracy of two decimal points
+ */
+
+
+
+var bills = [50.23, 19.12, 34.01,
+    100.11, 12.15, 9.90, 29.11, 12.99,
+    10.00, 99.22, 102.20, 100.10, 6.77, 2.22
+];
+
+
+var totals = bills.map(function(bill) 
+{
+  
+bill = bill * 0.15 + bill;
+ 
+  return Number(bill.toFixed(2));
+ 
+});
+
+console.log(totals);
+
+
+var donutBox = [
+  ["glazed", "chocolate glazed", "cinnamon"],
+  ["powdered", "sprinkled", "glazed cruller"],
+  ["chocolate cruller", "Boston creme", "creme de leche"]
+];
+
+If you wanted to loop over the donut box and display each donut (along with its position in the box!) you would start with writing a for loop to loop over each row of the box of donuts:
+
+var donutBox = [
+  ["glazed", "chocolate glazed", "cinnamon"],
+  ["powdered", "sprinkled", "glazed cruller"],
+  ["chocolate cruller", "Boston creme", "creme de leche"]
+];
+
+// here, donutBox.length refers to the number of rows of donuts
+for (var row = 0; row < donutBox.length; row++) {
+  console.log(donutBox[row]);
+}
+
+Prints:
+["glazed", "chocolate glazed", "cinnamon"]
+["powdered", "sprinkled", "glazed cruller"]
+["chocolate cruller", "Boston creme", "creme de leche"]
+
+Since each row is an array of donuts, you next need to set up an inner-loop to loop over each cell in the arrays.
+
+for (var row = 0; row < donutBox.length; row++) {
+  // here, donutBox[row].length refers to the length of the donut array currently being looped over
+  for (var column = 0; column < donutBox[row].length; column++) {
+    console.log(donutBox[row][column]);
+  }
+}
+
+
+/*
+ * Programming Quiz: Nested Numbers (6-10)
+ *
+ *   - The `numbers` variable is an array of arrays.
+ *   - Use a nested `for` loop to cycle through `numbers`.
+ *   - Convert each even number to the string "even"
+ *   - Convert each odd number to the string "odd"
+ */
+
+
+
+var numbers = [
+    [243, 12, 23, 12, 45, 45, 78, 66, 223, 3],
+
+    [34, 2, 1, 553, 23, 4, 66, 23, 4, 55],
+    [67, 56, 45, 553, 44, 55, 5, 428, 452, 3],
+
+    [12, 31, 55, 445, 79, 44, 674, 224, 4, 21],
+
+    [4, 2, 3, 52, 13, 51, 44, 1, 67, 5],
+
+    [5, 65, 4, 5, 5, 6, 5, 43, 23, 4424],
+
+    [74, 532, 6, 7, 35, 17, 89, 43, 43, 66],
+
+    [53, 6, 89, 10, 23, 52, 111, 44, 109, 80],
+ 
+   [67, 6, 53, 537, 2, 168, 16, 2, 1, 8],
+
+    [76, 7, 9, 6, 3, 73, 77, 100, 56, 100]
+];
+
+
+// your code goes here
+
+for (var row = 0; row < numbers.length; row++) {
+
+  
+  for(var column = 0; column < numbers[row].length; column++) {
+
+    if (numbers[row][column] % 2 === 0) {
+ 
+     numbers[row][column] = "even";
+ 
+   }else {
+
+      numbers[row][column] = "odd";
+ 
+    }
+ 
+ }
+
+}
+
+
+console.log(numbers); 
+

@@ -1,0 +1,189 @@
+var umbrella = { 
+  color: "pink",
+  isOpen: false,
+  open: function() { 
+    if (umbrella.isOpen === true) {
+      return "The umbrella is already opened!";
+    } else {
+      umbrella.isOpen = true;
+      return "Julia opens the umbrella!";
+    }
+   }
+};
+
+
+/*
+ * Programming Quiz: Umbrella (7-1)
+ */
+
+
+
+var umbrella = {
+
+    color: "pink",
+
+    isOpen: true,
+
+    open: function() {
+ 
+       if (umbrella.isOpen === true) {
+
+            return "The umbrella is already opened!";
+ 
+       } else {
+ 
+          umbrella.isOpen = true;
+ 
+           return "Julia opens the umbrella!";
+
+        }
+ 
+   },
+
+      close: function() {
+ 
+     if (umbrella.isOpen === false) {
+
+        return "Julia closes the umbrella!";
+
+      } else {
+ 
+         (umbrella.isOpen = false)
+
+        return "The umbrella is already closed!";
+
+    }
+  
+}
+
+};
+
+
+Object-literal notation
+
+var sister = {
+  name: "Sarah", 
+  age: 23,
+  parents: [ "alice", "andy" ],
+  siblings: ["julia"],
+  favoriteColor: "purple",
+  pets: true
+};
+
+
+methods
+
+var sister = {
+  name: "Sarah",
+  age: 23,
+  parents: [ "alice", "andy" ],
+  siblings: ["julia"],
+  favoriteColor: "purple",
+  pets: true,
+  paintPicture: function() { return "Sarah paints!"; }
+};
+
+sister.paintPicture();
+
+
+var user = {
+  email: "user@example.com",
+  firstName: "first",
+  lastName: "last"
+};
+
+Object literals, methods, and properties
+You can define objects using object-literal notation:
+
+var myObj = { 
+  color: "orange",
+  shape: "sphere",
+  type: "food",
+  eat: function() { return "yummy" }
+};
+
+myObj.eat(); // method
+myObj.color; // property
+
+/*
+ * Programming Quiz: Menu Items (7-2)
+ */
+
+
+var breakfast={
+    
+name:"The Lumberjack",
+
+    price:"$9.95",
+
+    ingredients:["eggs", "sausage", "toast", "hashbrowns", "pancakes",]
+   
+
+ 
+};
+
+
+
+var savingsAccount = {
+  balance: 1000,
+  interestRatePercent: 1,
+  deposit: function addMoney(amount) {
+    if (amount > 0) {
+      savingsAccount.balance += amount;
+    }
+  },
+  withdraw: function removeMoney(amount) {
+    var verifyBalance = savingsAccount.balance - amount;
+    if (amount > 0 && verifyBalance >= 0) {
+      savingsAccount.balance -= amount;
+    }
+  }
+};
+
+var facebookProfile = {
+  name: "Sharon Halliday",
+  friends: 94,
+  messages: ["Hello World", "Cookies", "Casino Time"],
+  postMessage(message) {
+    facebookProfile.messages.push(message); 
+  }, 
+  deleteMessage(index) {
+    facebookProfile.messages.splice(index,1);  
+  }, 
+  addFriend() {
+    facebookProfile.friends += 1; 
+  },
+  removeFriend() {
+   facebookProfile.friends = facebookProfile.friends -1; 
+  }, 
+}; 
+
+facebookProfile.removeFriend();
+facebookProfile.friends;
+
+
+
+/*
+ * Programming Quiz: Donuts Revisited (7-6)
+ */
+
+
+
+var donuts = [
+
+    { type: "Jelly", cost: 1.22 },
+
+    { type: "Chocolate", cost: 2.45 },
+
+    { type: "Cider", cost: 1.59 },
+ 
+    { type: "Boston Cream", cost: 5.99 }
+
+];
+
+donuts.forEach(function(donut) {
+  
+console.log(donut.type + " donuts cost $" + donut.cost + " each"); 
+
+
+});
