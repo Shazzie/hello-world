@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 var start = 0; // when to start
 while (start < 10) { // when to stop
   console.log(start);
@@ -35,10 +36,50 @@ while (x <= 20)
  
 * Use the following `while` loop to write out the song "99 bottles of juice".
  
+=======
+var start = 0; // when to start
+while (start < 10) { // when to stop
+  console.log(start);
+  start = start + 2; // how to get to the next item
+}
+
+var x = 1;
+
+while (x <= 20)
+ {
+    if ((x % 3 === 0) && (x % 5 === 0))
+{
+        console.log("JuliaJames");
+
+    }else if (x % 5 === 0){
+        console.log("James");
+
+    }else if (x % 3 === 0){
+        console.log("Julia");
+
+    }else {
+
+        console.log(x);
+ 
+    }
+
+    x ++
+}
+
+
+
+/*
+ * Programming Quiz: 99 Bottles of Juice (4-2)
+ *
+ 
+* Use the following `while` loop to write out the song "99 bottles of juice".
+ 
+>>>>>>> 29cdbd8b1e383db0568b6d57fc0e9dd71feede35
 * Log the your lyrics to the console.
  *
  * Note
  *   - Each line of the lyrics needs to be logged to the same line.
+<<<<<<< HEAD
  *   
 - The pluralization of the word "bottle" changes from "2 bottles" to "1 bottle" to "0 bottles".
  */
@@ -156,10 +197,130 @@ var solution=12;
 for(var f=1; f< 12;
  f++){
     solution *=f;
+=======
+ *   
+- The pluralization of the word "bottle" changes from "2 bottles" to "1 bottle" to "0 bottles".
+ */
+
+
+
+var num = 99;
+
+
+while (num >= 1)
+{
+    if (num > 2){
+
+    console.log(num +" bottles of juice on the wall! " + num +" bottles of juice! Take one down, pass it around... "+(num -1) + " bottles of juice on the wall!");
+
+    }else if(num === 2) {
+
+        console.log(num +" bottles of juice on the wall! "+num +" bottles of juice! Take one down, pass it around... "+(num -1) + " bottle of juice on the wall!");
+
+    }else {
+
+        console.log(num +" bottle of juice on the wall! "+num +" bottle of juice! Take one down, pass it around... "+(num -1) + " bottles of juice on the wall!");
+
+    }
+    num --;
+}
+
+
+var num = 60;
+ 
+
+while (num >=0){
+
+  if (num === 50) {
+
+    console.log("Orbiter transfers from ground to internal power");
+
+  }else if (num === 31) {
+
+    console.log("Ground launch sequencer is go for auto sequence start");
+
+  }else if (num === 16) {
+
+    console.log("Activate launch pad sound suppression system");
+
+  }else if (num === 10) {
+
+    console.log("Activate main engine hydrogen burnoff system");
+
+  }else if (num === 6) {
+
+    console.log ("Main engine start");
+ 
+  }else if (num === 0) {
+
+    console.log("Solid rocket booster ignition and liftoff!");
+
+  }else {
+
+    console.log("T-"+num+" seconds");
+
+  } 
+  num--
+}
+
+for loop
+
+for ( start; stop; step ) {
+  // do this thing
+}
+
+for (var i = 0; i < 6; i = i + 1) {
+  console.log("Printing out i = " + i);
+}
+
+nested loop
+
+for (var x = 0; x < 5; x = x + 1) {
+  for (var y = 0; y < 3; y = y + 1) {
+    console.log(x + "," + y);
+  }
+}
+
+x = 0 and y = 0, 1, 2 // corresponds to (0, 0), (0, 1), and (0, 2)
+
+x = 0 and y = 0, 1, 2 // (0, 0) (0, 1) and (0, 2)
+x = 1 and y = 0, 1, 2 // (1, 0) (1, 1) and (1, 2)
+x = 2 and y = 0, 1, 2 // (2, 0) (2, 1) and (2, 2)
+etc.
+
+
+for (var i = 0; i <= 6; i = i + 2) {
+  console.log(i);
+}
+
+log is 0246
+
+
+Increment and Decrement
+
+x++ or ++x // same as x = x + 1 
+x-- or --x // same as x = x - 1
+x += 3 // same as x = x + 3
+x -= 6 // same as x = x - 6
+x *= 2 // same as x = x * 2
+x /= 5 // same as x = x / 5
+
+
+for (var x=9; x>=1; x-- )
+{console.log("hello " + x)}..
+
+
+var solution=12;
+
+for(var f=1; f< 12;
+ f++){
+    solution *=f;
+>>>>>>> 29cdbd8b1e383db0568b6d57fc0e9dd71feede35
 
 
 }
 console.log(solution);
+<<<<<<< HEAD
 
 
 
@@ -179,4 +340,25 @@ function findAverage(x, y) {
   return answer;
 }
 
+=======
+
+
+
+for(var r=0; r < 26; r++) {
+ 
+   
+    for(var s = 0; s < 100; s ++) 
+{
+        
+console.log(r + "-" + s)
+    }
+}
+
+
+function findAverage(x, y) {
+  var answer = (x + y) / 2;
+  return answer;
+}
+
+>>>>>>> 29cdbd8b1e383db0568b6d57fc0e9dd71feede35
 var avg = findAverage(5, 9);

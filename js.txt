@@ -1,3 +1,4 @@
+<<<<<<< HEAD
                                   console.log
 
 alert ("Hello Shazzie, Are you missing me?");
@@ -44,6 +45,54 @@ comment
 */
 
 
+=======
+                                  console.log
+
+alert ("Hello Shazzie, Are you missing me?");
+
+---> loop
+for (var i = 0; i < 10; i++) {
+  console.log(i);
+}
+
+
+----->gif
+document.body.addEventListener('click', function () {
+     var myParent = document.getElementById("Banner"); 
+     var myImage = document.createElement("img");
+     myImage.src = 'https://thecatapi.com/api/images/get?format=src&type=gif';
+     myParent.appendChild(myImage);
+     myImage.style.marginLeft = "160px";
+});
+
+Numbers
+
+Comparing numbers
+true false
+
+Arithmetic operations
+/*-+
+
+
+Operator	Meaning
+<	Less than
+>	Greater than
+<=	Less than or Equal to
+>=	Greater than or Equal to
+==	Equal to
+!=	Not Equal to
+
+
+// this is a single-line comment
+
+/*
+this is
+a multi-line
+comment
+*/
+
+
+>>>>>>> 29cdbd8b1e383db0568b6d57fc0e9dd71feede35
 /*
  * Programming Quiz: Converting Tempatures (2-2)
  *
@@ -53,6 +102,7 @@ comment
  *
  * Log the fahrenheit variable to the console.
  *
+<<<<<<< HEAD
  
 
 */
@@ -96,6 +146,51 @@ var total = (bill + tip);
 
 console.log ("$"+total.toFixed(2));
 
+=======
+ 
+
+*/
+
+var celsius = 12;
+
+var fahrenheit = celsius * 1.8 + 32;
+
+console.log(fahrenheit);
+
+
+var answer = "ALL Strings are CrEaTeD equal" == "ALL Strings are CrEaTeD equal";
+
+console.log(answer);
+
+/*
+ * Programming Quiz: All Tied Up (2-5)
+ 
+*/
+
+var joke = "Why couldn't the shoes go out and play?\nThey were all \"tied\" up!";
+
+console.log(joke);
+
+
+var thingOne = "red";
+var 
+thingTwo = "blue";
+
+console.log (thingOne + thingTwo);
+
+var fullName = "Sharon";
+
+console.log(fullName);
+
+var bill = (10.25 + 3.99 + 7.15);
+
+var tip = (bill * 0.15 ) ;
+
+var total = (bill + tip);
+
+console.log ("$"+total.toFixed(2));
+
+>>>>>>> 29cdbd8b1e383db0568b6d57fc0e9dd71feede35
 /*
  * Programming Quiz: MadLibs (2-11)
  * 
@@ -105,6 +200,7 @@ console.log ("$"+total.toFixed(2));
  * 'The Intro to JavaScript course is amazing. James and Julia are so fun. I cannot wait to work through the rest of this entertaining content!'
  */
 
+<<<<<<< HEAD
 
 
 var adjective1 = "amazing";
@@ -118,6 +214,21 @@ var madLib = "The Intro to JavaScript course is " + adjective1 + ". " + "James a
 console.log (madLib);
 
 
+=======
+
+
+var adjective1 = "amazing";
+
+var adjective2 = "fun";
+
+var adjective3 = "entertaining";
+
+var madLib = "The Intro to JavaScript course is " + adjective1 + ". " + "James and Julia are so " + adjective2 + ". I cannot wait to work through the rest of this " + adjective3 + " content!";
+
+console.log (madLib);
+
+
+>>>>>>> 29cdbd8b1e383db0568b6d57fc0e9dd71feede35
 /*
  * Programming Quiz: One Awesome Message (2-12)
  *
@@ -135,6 +246,7 @@ console.log (madLib);
  * - Using the above as an example, firstName would have been assigned to
  *   "Julia", interest to "cats", and hobby to "play video games".
  * - Be sure to include spaces and periods where necessary!
+<<<<<<< HEAD
  */
 
 
@@ -151,6 +263,24 @@ console.log (awesomeMessage);
 
 var awesomeMessage = Hi, my name is ${firstName}. I love ${hobby}. In my spare time, I have a passion for ${interest}.
 
+=======
+ */
+
+
+
+var firstName="Sharon";
+
+var hobby="poker";
+
+var interest="astronomy";
+
+var awesomeMessage= "Hi, my name is " + firstName + " . I love "+ hobby +". In my spare time, I have a passion for " + interest +" .";
+console.log (awesomeMessage);
+
+
+var awesomeMessage = Hi, my name is ${firstName}. I love ${hobby}. In my spare time, I have a passion for ${interest}.
+
+>>>>>>> 29cdbd8b1e383db0568b6d57fc0e9dd71feede35
 /*
  * Programming Quiz: One Awesome Message (2-12)
  *
@@ -170,6 +300,7 @@ var awesomeMessage = Hi, my name is ${firstName}. I love ${hobby}. In my spare t
  * - Be sure to include spaces and periods where necessary!
  */
 
+<<<<<<< HEAD
 
 
 var firstName="Sharon";
@@ -242,6 +373,80 @@ if(position === 1) {
 console.log(runner + " received a " + medal + " medal.");
 
 
+=======
+
+
+var firstName="Sharon";
+
+var hobby="poker";
+
+var interest="astronomy";
+
+var awesomeMessage= "Hi, my name is " + firstName + " . I love "+ hobby +". In my spare time, I have a passion for " + interest +" .";
+console.log(awesomeMessage);
+
+if (/* this expression is true */) {
+  // run this code
+} else {
+  // run this code
+}
+
+
+var a = 1;
+var b = 2;
+
+if (a > b) {
+  console.log("a is greater than b");
+} else {
+  console.log("a is less than or equal to b");
+}
+
+TIP: When coding, sometimes you may only want to use an if statement. However, if you try to use only an else statement, then you will receive the error SyntaxError: Unexpected token else. You’ll see this error because else statements need an if statement in order to work. You can’t have an else statement without first having an if statement.
+
+
+multiple choice
+
+var weather = "sunny";
+
+if (weather === "snow") {
+  console.log("Bring a coat.");
+} else if (weather === "rain") {
+  console.log("Bring a rain jacket.");
+} else {
+  console.log("Wear what you have on.");
+}
+
+
+var money = 100.50;
+var price = 100.50;
+
+if (money > price) {
+  console.log("You paid extra, here's your change.");
+} else if (money === price) {
+  console.log("You paid the exact amount, have a nice day!");
+} else {
+  console.log("That's not enough, you still owe me money.");
+}
+
+
+var runner = "Kendyll";
+var position = 2;
+var medal;
+
+if(position === 1) {
+  medal = "gold";
+} else if(position === 2) {
+  medal = "silver";
+} else if(position === 3) {
+  medal = "bronze";
+} else {
+  medal = "pat on the back";
+}
+
+console.log(runner + " received a " + medal + " medal.");
+
+
+>>>>>>> 29cdbd8b1e383db0568b6d57fc0e9dd71feede35
 /*
  * Programming Quiz: Even or Odd (3-2)
  *
@@ -251,6 +456,7 @@ console.log(runner + " received a " + medal + " medal.");
  * Note - make sure to print only the string "even" or the string "odd"
  */
 
+<<<<<<< HEAD
 // change the value of `number` to test your if...else statement
 
 
@@ -295,10 +501,57 @@ var musicians = 20;
 
 }
 
+=======
+// change the value of `number` to test your if...else statement
+
+
+var number = 3;
+
+if ( number % 2 === 0 /* your conditional goes here */) 
+{
+    console.log("even");
+
+} else {
+    
+console.log("odd");
+}
+
+
+
+
+var musicians = 20;
+
+( musicians <= 0 ) 
+{
+    console.log("not a group");
+
+} else if ( musicians === 1 ) {
+ 
+   console.log("solo");
+
+} else if ( musicians === 2 ) {
+ 
+   console.log("duet");
+
+} else if ( musicians === 3 )
+ {
+    console.log("trio");
+
+} else if ( musicians === 4 ) {
+ 
+   console.log("quartet");
+} else {
+   
+ console.log("this is a large group");
+
+}
+
+>>>>>>> 29cdbd8b1e383db0568b6d57fc0e9dd71feede35
  /*
  * Programming Quiz: Murder Mystery (3-4)
  */
 // change the value of `room` and `suspect` to test your code
+<<<<<<< HEAD
 
 
 var room = "gallery";
@@ -353,11 +606,68 @@ Logical Operators
 ||	Logical OR	value1 || value2	Returns true if either value1 or value2 (or even both!) evaluates to true.
 !	Logical NOT	!value1	Returns the opposite of value1. If value1 is true, then !value1 is false.
 
+=======
+
+
+var room = "gallery";
+
+var suspect = "Ms. Van Cleve";
+
+var weapon = "";
+
+var solved = false;
+
+if ( room === "ballroom" && suspect === "Mr. Kalehoff" ) {
+ 
+   weapon = "poison";
+ 
+   solved = true;
+
+} else if ( room === "billiards room" && suspect === "Mrs. Sparr" ) {
+    
+weapon = "pool stick";
+    
+solved = true;
+
+} else if ( room === "dining room" && suspect === "Mr. Parkes" ) {
+ 
+   weapon = "knife";
+
+    solved = true;
+
+} else {
+   
+ weapon = "trophy";
+    
+solved = true;
+
+}
+if (solved) {
+   
+ console.log(suspect + " did it in the " + room + " with the " + weapon + "!");
+}
+
+
+var colt = "not busy";
+var weather = "nice";
+
+if (colt === "not busy" && weather === "nice") {
+  console.log("go to the park");
+}
+
+Logical Operators
+
+&&	Logical AND	value1 && value2	Returns true if both value1 and value2 evaluate to true.
+||	Logical OR	value1 || value2	Returns true if either value1 or value2 (or even both!) evaluates to true.
+!	Logical NOT	!value1	Returns the opposite of value1. If value1 is true, then !value1 is false.
+
+>>>>>>> 29cdbd8b1e383db0568b6d57fc0e9dd71feede35
 /*
  * Programming Quiz - Checking Your Balance (3-5)
  */
 
 // change the values of `balance`, `checkBalance`, and `isActive` to test your code
+<<<<<<< HEAD
 var balance = 325.00;
 
 var checkBalance = false;
@@ -404,10 +714,59 @@ else {
     console.log("I'd like an ice lolly" ); 
  }   
 
+=======
+var balance = 325.00;
+
+var checkBalance = false;
+
+var isActive = true;
+
+if (checkBalance) {
+    
+if (isActive && balance > 0) {
+
+        console.log("Your balance is $" + balance + ".");
+
+} else if (!isActive) {
+
+        console.log("Your account is no longer active.");
+
+} else if (balance === 0)
+ {
+     console.log("Your account is empty.");
+
+ } else {
+
+    console.log("Your balance is negative. Please contact bank.");
+
+ }} else {
+    console.log("Thank you. Have a nice day!");
+
+
+var flavor = "strawberry";
+
+var vessel = "cone";
+
+var toppings = "sprinkles";
+
+if ( (flavor === "vanilla" || flavor === "chocolate") && 
+     (vessel === "cone" || vessel === "bowl") && 
+     (toppings === "sprinkles" || toppings === "peanuts") ) {
+
+        console.log(`I'd like two scoops of ${flavor} ice cream in a ${vessel} with ${toppings}.`);
+
+}
+else {
+
+    console.log("I'd like an ice lolly" ); 
+ }   
+
+>>>>>>> 29cdbd8b1e383db0568b6d57fc0e9dd71feede35
  /*
  * Programming Quiz: What do I Wear? (3-7)
  */
 // change the values of `shirtWidth`, `shirtLength`, and `shirtSleeve` to test your code
+<<<<<<< HEAD
 var shirtWidth = 18;
 
   var shirtLength = 29;
@@ -472,11 +831,78 @@ conditional ? (if condition is true) : (if condition is false)
 var eatsPlants = true;
 
 var eatsAnimals = false;
+=======
+var shirtWidth = 18;
+
+  var shirtLength = 29;
+
+  var shirtSleeve = 8.47;
+
+if ((shirtWidth >= 18 && shirtWidth < 20) &&
+ 
+     (shirtLength >= 28 && shirtLength < 29) &&
+ 
+     (shirtSleeve >= 8.13 && shirtSleeve < 8.38)) {
+ 
+     console.log ("S");
+ 
+ } else if ((shirtWidth >= 20 && shirtWidth < 22) &&
+
+             (shirtLength >= 29 && shirtLength < 30) &&
+ 
+            (shirtSleeve >= 8.38 && shirtSleeve < 8.63)) {
+
+      console.log ("M");
+  } else if ((shirtWidth >= 22 &&
+ shirtWidth < 24) &&
+
+             (shirtLength >= 30 && shirtLength < 31) &&
+
+             (shirtSleeve >= 8.63 && shirtSleeve < 8.88)) 
+{
+      console.log ("L");
+  
+} else if ((shirtWidth >= 24 && shirtWidth < 26) &&
+
+             (shirtLength >= 31 && shirtLength < 33) &&
+  
+           (shirtSleeve >= 8.88 && shirtSleeve < 9.63)) {
+ 
+     console.log ("XL");
+  } else if ((shirtWidth >= 26 && shirtWidth < 28) &&
+ 
+             (shirtLength >= 33 && shirtLength < 34) && 
+
+             (shirtSleeve >= 9.63 && shirtSleeve < 10.13)) 
+{
+      console.log ("2XL");
+ 
+ } else if (shirtWidth === 28 &&
+             
+shirtLength === 34 &&
+
+            shirtSleeve === 10.13) 
+{
+      
+console.log ("3XL");
+  
+} else {
+     console.log ("We don't stock that size sorry");
+  }
+
+
+conditional ? (if condition is true) : (if condition is false)
+
+var eatsPlants = true;
+
+var eatsAnimals = false;
+>>>>>>> 29cdbd8b1e383db0568b6d57fc0e9dd71feede35
 
 
 var category = eatsPlants && eatsAnimals ? "omnivore": eatsPlants ? "herbivore" : eatsAnimals ? "carnivore" : undefined; 
 
 console.log(category);
+<<<<<<< HEAD
 
 
 if (option === 1) {
@@ -649,3 +1075,177 @@ case "a Bachelor's degree":
 }
 
 console.log("In 2015, a person with " + education +" earned an average of "+ salary+"/year.");
+=======
+
+
+if (option === 1) {
+  console.log("You selected option 1.");
+} else if (option === 2) {
+  console.log("You selected option 2.");
+} else if (option === 3) {
+  console.log("You selected option 3.");
+} else if (option === 4) {
+  console.log("You selected option 4.");
+} else if (option === 5) {
+  console.log("You selected option 5.");
+} else if (option === 6) {
+  console.log("You selected option 6.");
+}
+
+
+switch (option) {
+  case 1:
+    console.log("You selected option 1.");
+  case 2:
+    console.log("You selected option 2.");
+  case 3:
+    console.log("You selected option 3.");
+  case 4:
+    console.log("You selected option 4.");
+  case 5:
+    console.log("You selected option 5.");
+  case 6:
+    console.log("You selected option 6.");
+}
+
+var option = 3;
+
+switch (option) {
+  case 1:
+    console.log("You selected option 1.");
+    break;
+  case 2:
+    console.log("You selected option 2.");
+    break;
+  case 3:
+    console.log("You selected option 3.");
+    break;
+  case 4:
+    console.log("You selected option 4.");
+    break;
+  case 5:
+    console.log("You selected option 5.");
+    break;
+  case 6:
+    console.log("You selected option 6.");
+    break; // technically, not needed
+
+
+var month = 2;
+
+switch(month) {
+  case 1:
+  case 3:
+  case 5:
+  case 7:
+  case 8:
+  case 10:
+  case 12:
+    days = 31;
+    break;
+  case 4:
+  case 6:
+  case 9:
+  case 11:
+    days = 30;
+    break;
+  case 2:
+    days = 28;
+}
+
+console.log("There are " + days + " days in this month.");
+
+
+var tier = "nsfw deck";
+var output = "You’ll receive "
+
+switch (tier) {
+  case "deck of legends":
+    output += "a custom card, ";
+  case "collector's deck":
+    output += "a signed version of the Exploding Kittens deck, ";
+  case "nsfw deck":
+    output += "one copy of the NSFW (Not Safe for Work) Exploding Kittens card game and ";
+  default:
+    output += "one copy of the Exploding Kittens card game.";
+}
+
+console.log(output);
+
+
+var tier = "none";
+var output = "You’ll receive ";
+
+switch (tier) {
+  ... 
+  default:
+    output += "one copy of the Exploding Kittens card game.";
+}
+
+console.log(output);
+
+var prize = "";
+
+switch (winner) {
+  case 1:
+    prize += "a trip for two to the Bahamas and ";
+  case 2:
+    prize += "a four piece furniture set.";
+    break;
+  case 3:
+    prize += "a smartwatch and ";
+  default:
+    prize += "tickets to the circus.";
+}
+
+console.log("You've won " + prize);
+
+
+switch (education) {
+  
+case "no high school diploma":
+
+    salary ="$25,636";
+ 
+   break;
+  
+case "a high school diploma":
+
+    salary ="$35,256";
+
+    break;
+  
+case"an Associate's degree" :
+
+    salary ="$41,496";
+
+    break;
+  
+case "a Bachelor's degree":
+
+    salary ="$59,124";
+
+    break;
+
+  case "a Master's degree":
+ 
+    salary ="$69,732";
+
+    break;
+
+  case "a Professional degree":
+
+    salary ="$89,960";
+
+    break;
+
+  case "a Doctoral degree":
+
+    salary="$84,396";
+
+    break;
+
+}
+
+console.log("In 2015, a person with " + education +" earned an average of "+ salary+"/year.");
+>>>>>>> 29cdbd8b1e383db0568b6d57fc0e9dd71feede35
